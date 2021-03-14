@@ -5,10 +5,11 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  Gatsby 3 Windmill Tailwind Starter
 </h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+Kick off your project with this default boilerplate. This starter ships with the main Gatsby 3 configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+Features the Windmill UI that utilizes Tailwind classes for quick and easy theming for your next project.
 
 _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
 

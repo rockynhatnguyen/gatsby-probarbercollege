@@ -1,11 +1,12 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-3-tailwind-starter",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A simple starter to get up and developing quickly with Gatsby 3",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Rocky Nguyen",
   "dependencies": {
-    "gatsby": "^3.0.1",
+    "@material-ui/core": "^4.11.3",
+    "gatsby": "^3.0.3",
     "gatsby-plugin-gatsby-cloud": "^2.0.0",
     "gatsby-plugin-image": "^1.0.0",
     "gatsby-plugin-manifest": "^3.0.0",
@@ -23,7 +24,8 @@
     "prettier": "2.2.1"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "gatsby 3"
   ],
   "license": "0BSD",
   "scripts": {
