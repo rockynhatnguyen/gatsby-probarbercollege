@@ -1,0 +1,51 @@
+.toolbar img {
+    max-width: 180px;
+    margin: 20px 5px;
+}
+
+.logo-link a {
+    border: unset;
+    outline: none;
+}
+
+.logo-link:hover {
+    color: black;
+    border-bottom: 0;
+    outline: none;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    border-bottom: 0;
+}
+
+.nav-links .MuiListItemText-root {
+    color: #C7C7C7;
+    border-bottom: 0;
+    text-transform: uppercase;
+    transition: border 0.75s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.nav-links .MuiListItemText-root:hover {
+    border-bottom: 1px solid white;
+}
+
+.nav-ctas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-ctas a {
+    margin: 0 5px;
+}
+
+.nav-ctas a:hover {
+    border-bottom: 0;
+    outline: none;
+}

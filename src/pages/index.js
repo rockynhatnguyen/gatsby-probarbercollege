@@ -1,36 +1,31 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import Button from '@material-ui/core/Button'
-import Typography from '@material-ui/core/Typography'
+import HomeBanner from "../components/HomeBanner"
+import About from "../components/About"
+import Courses from "../components/Courses"
+import Features from "../components/Features"
+import FeaturesReverse from "../components/FeaturesReverse"
+import CallToAction from "../components/CallToAction"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1 className="text-red-500">Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Typography variant="h2" gutterBottom>
-      Welcome to React
-    </Typography>
-    <Button variant="contained" color="primary">Ready To Go</Button>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
-  </Layout>
-)
+import ctaImage from "../images/bg-cta-1.jpg"
+
+const IndexPage = () => {
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <div className="max-w-7xl mx-auto">
+        <HomeBanner />
+        <About />
+        <Courses />
+        <Features />
+        <FeaturesReverse />
+      </div>
+      <CallToAction header="Enroll now to save your spot!" buttonText="Enroll Now" buttonUrl="/application" />
+    </Layout>
+  )
+}
 
 export default IndexPage

@@ -6,11 +6,68 @@
  */
 
 import * as React from "react"
-import PropTypes from "prop-types"
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles'
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import "./global.css"
+
+const theme = createMuiTheme({  typography: {
+  fontFamily: [
+      'Nunito',
+      '-apple-system',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif',
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(','),
+  },
+  palette: {
+    primary: {
+      main: '#111',
+    },
+    secondary: {
+      main: '#C7C7C7'
+    }
+  },
+  overrides: {
+    // Style sheet
+    MuiButton: {
+      // Name of the rule
+      root: {
+        borderRadius: '5rem',
+        transition: 'all 0.7s ease',
+        fontWeight: '700',
+      },
+      contained: {
+        background: '#C7C7C7',
+        border: '1px solid #111',
+        padding: '5px 35px',
+        '&:hover': {
+          backgroundColor: '#000',
+          border: '1px solid #111',
+          color: '#FFF',
+        },
+      },
+      outlined: {
+        background: '#transparent',
+        border: '1px solid #C7C7C7',
+        color: '#C7C7C7',
+        padding: '5px 35px',
+        '&:hover': {
+          background: '#C7C7C7',
+          color: '#000',
+        }
+      },
+    },
+  },
+});
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,32 +81,27 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+    <ThemeProvider theme={theme}>
+      <Header />
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
         }}
       >
         <main>{children}</main>
         <footer
           style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
             marginTop: `2rem`,
           }}
         >
-          © {new Date().getFullYear()} | Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          © {new Date().getFullYear()} | Pro Barber College
         </footer>
       </div>
-    </>
+    </ThemeProvider>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout

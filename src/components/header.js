@@ -1,42 +1,49 @@
 import * as React from "react"
-import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import { AppBar, Button, Toolbar } from "@material-ui/core"
+import { List, ListItem, ListItemText } from "@material-ui/core"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+import "./header.css"
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+import logo from "../images/logo-pro-barber-college@2x.jpg"
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+const navLinks = [
+  { title: `Home`, path: `/` },
+  { title: `Pricing`, path: `/pricing` },
+  { title: `Contact`, path: `/contact` },
+  { title: `Application`, path: `/application` }
+]
+
+const Header = () => {
+  return (
+  <AppBar position="static"
+  style={{
+    background: '#232526',
+    marginBottom: '1.45rem',
+  }}>
+    <Toolbar className="toolbar">
+      <div className="max-w-7xl w-full overflow-hidden flex justify-between items-center mx-auto">
+        <Link className="logo-link" to="/"><img className="site-logo" src={logo} alt="Pro Barber College logo" /></Link>
+        <List className="nav-links" component="nav" aria-labelledby="main navigation">
+          {navLinks.map(({ title, path }) => (
+            <Link to={path} key={title}>
+              <ListItem>
+                <ListItemText primary={title} />
+              </ListItem>
+            </Link>
+          ))}
+        </List>
+        <div className="nav-ctas">
+            <Link to="/contact">
+                <Button variant="outlined">Find Us</Button>
+            </Link>
+            <Link to="/application">
+                <Button variant="contained">Enroll</Button>
+            </Link>
+        </div>
+      </div>
+    </Toolbar>
+  </AppBar>
+)}
 
 export default Header
