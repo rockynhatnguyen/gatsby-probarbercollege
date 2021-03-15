@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { AppBar, Button, Toolbar } from "@material-ui/core"
 import { List, ListItem, ListItemText } from "@material-ui/core"
 
-import "./header.css"
+import "./Header.css"
 
 import logo from "../images/logo-pro-barber-college@2x.jpg"
 
@@ -16,7 +16,7 @@ const navLinks = [
 
 const Header = () => {
   return (
-  <AppBar position="static"
+  <AppBar position="sticky"
   style={{
     background: '#232526',
     marginBottom: '1.45rem',

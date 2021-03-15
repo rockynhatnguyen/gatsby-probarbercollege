@@ -9,7 +9,8 @@ import * as React from "react"
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles'
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+import Header from "./Header"
+import Footer from "./Footer"
 import "./layout.css"
 import "./global.css"
 
@@ -89,16 +90,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()} | Pro Barber College
-        </footer>
+        <Footer />
       </div>
     </ThemeProvider>
   )

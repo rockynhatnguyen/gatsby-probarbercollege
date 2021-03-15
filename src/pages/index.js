@@ -9,8 +9,7 @@ import Courses from "../components/Courses"
 import Features from "../components/Features"
 import FeaturesReverse from "../components/FeaturesReverse"
 import CallToAction from "../components/CallToAction"
-
-import ctaImage from "../images/bg-cta-1.jpg"
+import Questions from "../components/Questions"
 
 const IndexPage = () => {
   return (
@@ -24,6 +23,7 @@ const IndexPage = () => {
         <FeaturesReverse />
       </div>
       <CallToAction header="Enroll now to save your spot!" buttonText="Enroll Now" buttonUrl="/application" />
+      <Questions />
     </Layout>
   )
 }
