@@ -5,7 +5,7 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   flags: {
-    DEV_SSR: false,
+    DEV_SSR: true,
     PARALLEL_SOURCING: true,
   },
   plugins: [

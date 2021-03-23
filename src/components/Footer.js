@@ -17,7 +17,7 @@ const Footer = () => {
 
                         <h3 className="text-xl font-bold mt-8 md:mt-10">Social Media</h3>
                         <div className="inline-block my-3">
-                            <a className="ml-3 mr-4" href="" target="_blank">
+                            <a className="ml-3 mr-4" href="https://www.facebook.com/probarbercollege/" rel="noreferrer" target="_blank">
                                 <StaticImage className="w-3"
                                     src="../images/icon-facebook.svg"
                                     width={200}
@@ -27,7 +27,7 @@ const Footer = () => {
                                 />
                                 <span className="sr-only">Pro Barber College Facebook Link</span>
                             </a>
-                            <a className="ml-2" href="" target="_blank">
+                            <a className="ml-2" href="https://www.yelp.com/biz/pro-barber-college-torrance-2" rel="noreferrer" target="_blank">
                                 <StaticImage className="w-6"
                                     src="../images/icon-yelp.svg"
                                     width={200}
@@ -80,7 +80,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center mt-10">
+            <div className="flex justify-center mt-10 mb-6">
                 © {new Date().getFullYear()} Pro Barber College
             </div>
         </footer>

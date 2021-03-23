@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-import Box from '@material-ui/core/Box'
 import Button from '@material-ui/core/Button'
 
 const HomeBanner = () => {
@@ -10,9 +9,9 @@ const HomeBanner = () => {
         <div className="max-w-7xl flex flex-col justify-between items-center text-center md:text-left md:flex-row md:mx-4 my-8 md:mt-12">
             <div className="flex-col md:flex-row justify-center">
                 <div className="px-6 md:px-0">
-                    <h1 className="text-4xl font-bold">Interested in a Barbering Career?</h1>
+                    <h1 className="text-4xl font-bold mb-4">Interested in a<br />Barbering Career?</h1>
                 </div>
-                <Box className="flex flex-row">
+                <div className="flex flex-row">
                     <div className="w-full flex flex-col">
                         <div className="flex flex-col md:flex-row" style={{ margin: '10px 0'}}>
                             <div className="w-full md:w-1/2">
@@ -37,7 +36,7 @@ const HomeBanner = () => {
                             </div>
                         </div>
                     </div>
-                </Box>
+                </div>
             </div>
             <StaticImage className="mx-4 md:mx-0 rounded-2xl"
                 src="../images/index-header-banner.jpg"

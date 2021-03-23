@@ -7,21 +7,21 @@ const FeaturesReverse = () => {
             <div className="flex flex-col lg:flex-row mt-8">
                 <div className="w-full lg:w-1/2 order-2 lg:order-1 flex flex-col justify-between items-center lg:mr-8">
                     <StaticImage className="mx-4 md:mx-0 my-4 rounded-2xl"
-                        src="../images/features-1.jpg"
+                        src="../images/features-4@2x.jpg"
                         width={650}
                         quality={95}
                         formats={["AUTO", "WEBP", "AVIF"]}
                         alt="Barber students cutting hair for clients."
                     />
                     <StaticImage className="mx-4 md:mx-0 my-4 rounded-2xl"
-                        src="../images/features-2.jpg"
+                        src="../images/features-5@2x.jpg"
                         width={650}
                         quality={95}
                         formats={["AUTO", "WEBP", "AVIF"]}
                         alt="A barber student cleaning and prepping equipment."
                     />
                     <StaticImage className="mx-4 md:mx-0 my-4 rounded-2xl"
-                        src="../images/features-3.jpg"
+                        src="../images/features-6@2x.jpg"
                         width={650}
                         quality={95}
                         formats={["AUTO", "WEBP", "AVIF"]}
