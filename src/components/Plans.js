@@ -2,9 +2,9 @@ import React from 'react'
 
 const Plans = () => {
     return (
-        <div className="flex flex-col bg-dark-200 rounded-xl mt-16 p-8 text-center">
-            <h1 className="text-5xl font-bold mb-6">Educational Plans</h1>
-            <p className="text-xl mx-3 md:mx-0">Find the best plan for your educational needs and career path</p>
+        <div className="max-w-7xl mx-4 md:mx-auto flex flex-col bg-dark-200 rounded-xl md:mt-16 p-8 text-center">
+            <h1 className="text-5xl font-bold text-white mb-6">Educational Plans</h1>
+            <p className="text-xl text-white mx-3 md:mx-0">Find the best plan for your educational needs and career path</p>
             <div className="flex flex-col items-center lg:grid lg:grid-cols-2 lg:grid-rows-2 text-center lg:text-left mt-12">
                 <div className="flex flex-col lg:flex-row">
                     <span className="flex justify-center items-center px-6">
