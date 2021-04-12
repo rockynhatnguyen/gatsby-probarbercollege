@@ -1,0 +1,2 @@
+(self.webpackChunkgatsby_3_tailwind_starter=self.webpackChunkgatsby_3_tailwind_starter||[]).push([[401],{7680:function(e,t,n){"use strict";n.r(t);var r=n(7294),a=n(5208),l=n(3751);t.default=function(){return r.createElement(a.Z,null,r.createElement(l.Z,{title:"Pricing"}),r.createElement("h1",null,"Pricing"))}}}]);
+//# sourceMappingURL=component---src-pages-pricing-js-22b149bd1d845c4e4dcf.js.map

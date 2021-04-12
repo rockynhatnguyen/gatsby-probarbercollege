@@ -1,0 +1,2 @@
+(self.webpackChunkgatsby_3_tailwind_starter=self.webpackChunkgatsby_3_tailwind_starter||[]).push([[944],{4993:function(t,e,n){"use strict";n.r(e);var a=n(7294),l=n(5208),i=n(3751);e.default=function(){return a.createElement(l.Z,null,a.createElement(i.Z,{title:"Application"}),a.createElement("h1",null,"Application"))}}}]);
+//# sourceMappingURL=component---src-pages-application-js-e1937d5e6dc9ef2ec7d2.js.map
