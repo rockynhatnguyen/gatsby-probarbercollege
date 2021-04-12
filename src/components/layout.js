@@ -89,7 +89,7 @@ const Layout = ({ children }) => {
           margin: `0 auto`,
         }}
       >
-        <main>{children}</main>
+        <main data={data}>{children}</main>
         <Footer />
       </div>
     </ThemeProvider>

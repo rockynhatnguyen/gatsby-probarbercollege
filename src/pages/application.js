@@ -2,11 +2,12 @@ import * as React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Application from "../components/application"
 
 const ApplicationPage = () => (
   <Layout>
     <SEO title="Application" />
-    <h1>Application</h1>
+    <Application />
   </Layout>
 )
 

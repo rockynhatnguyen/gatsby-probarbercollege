@@ -9,7 +9,7 @@ import logo from "../images/logo-pro-barber-college@2x.jpg"
 
 const navLinks = [
   { title: `Home`, path: `/` },
-  { title: `Pricing`, path: `/pricing` },
+  { title: `Plans`, path: `/plans` },
   { title: `Contact`, path: `/contact` },
   { title: `Application`, path: `/application` }
 ]

@@ -1,12 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Pro Barber College`,
+    title: `Pro Barber College`,
     description: `Gatsby website for Pro Barber College.`,
     author: `@gatsbyjs`,
-  },
-  flags: {
-    DEV_SSR: true,
-    PARALLEL_SOURCING: true,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
