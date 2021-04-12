@@ -6,32 +6,28 @@ import { StaticImage } from "gatsby-plugin-image"
 const BarberingCourse = () => {
     return (
         <div className="max-w-7xl mx-4 md:mx-auto flex flex-col items-center md:flex-row md:justify-center md:items-start mt-16">
-            <div className="w-full md:w-1/3 flex flex-col px-0 md:px-10 py-10">
-                <h2 className="border-2 rounded-xl mx-auto px-6 py-3 text-center mb-8">(SOC) 39-5011</h2>
-                <StaticImage className="rounded-2xl"
-                    src="../../images/plans-barbering-1.jpg"
-                    width={500}
-                    quality={95}
-                    formats={["AUTO", "WEBP", "AVIF"]}
-                    alt="A barber student cutting hair."
-                    style={{ marginBottom: `1.45rem` }}
-                />
-                <StaticImage className="hidden md:block rounded-2xl"
-                    src="../../images/plans-barbering-2.jpg"
-                    width={500}
-                    quality={95}
-                    formats={["AUTO", "WEBP", "AVIF"]}
-                    alt="A barber student cutting hair."
-                    style={{ marginBottom: `1.45rem` }}
-                />
-                <StaticImage className="hidden md:block rounded-2xl"
-                    src="../../images/plans-barbering-3.jpg"
-                    width={500}
-                    quality={95}
-                    formats={["AUTO", "WEBP", "AVIF"]}
-                    alt="A barber student cutting hair."
-                    style={{ marginBottom: `1.45rem` }}
-                />
+            <div className="w-full md:w-1/3 flex flex-col items-start justify-start pr-0 md:pr-10 pt-10 md:pb-10">
+                <h2 className="w-full border-2 rounded-xl mx-auto px-6 py-3 text-center mb-8">(SOC) 39-5011</h2>
+                <div className="w-full block">
+                    <StaticImage className="w-full rounded-2xl"
+                        src="../../images/plans-barbering-1.jpg"
+                        width={500}
+                        quality={95}
+                        formats={["AUTO", "WEBP", "AVIF"]}
+                        alt="A barber student cutting hair."
+                        style={{ marginBottom: `1.45rem` }}
+                    />
+                </div>
+                <div className="w-full hidden md:block">
+                    <StaticImage className="w-full rounded-2xl"
+                        src="../../images/plans-barbering-2.jpg"
+                        width={500}
+                        quality={95}
+                        formats={["AUTO", "WEBP", "AVIF"]}
+                        alt="A barber student cutting hair."
+                        style={{ marginBottom: `1.45rem` }}
+                    />
+                </div>
             </div>
             <div className="w-full md:w-2/3 flex flex-col p-10 bg-dark-200 rounded-xl">
                 <h2 className="text-4xl font-semibold">Barbering Course</h2>
@@ -47,6 +43,9 @@ const BarberingCourse = () => {
                     <div className="flex flex-col">
                         <h3 className="text-xl font-bold">FULL TUITION</h3>
                         <p className="ml-3 underline">Payment Plan</p>
+                        <p className="ml-3">$2750 Down Payment</p>
+                        <p className="ml-3">$300 Monthly Payment</p>
+                        <p className="ml-3">Payment Plan</p>
                         <p className="ml-3">* Tool kit and book are included</p>
                     </div>
                     <div><span className="text-xl font-bold">$6050</span></div>

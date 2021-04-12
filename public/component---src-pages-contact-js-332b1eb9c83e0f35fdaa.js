@@ -1,0 +1,2 @@
+(self.webpackChunkgatsby_3_tailwind_starter=self.webpackChunkgatsby_3_tailwind_starter||[]).push([[501],{262:function(t,e,a){"use strict";a.r(e);var n=a(7294),r=a(4620),l=a(3751);e.default=function(){return n.createElement(r.Z,null,n.createElement(l.Z,{title:"Contact"}))}}}]);
+//# sourceMappingURL=component---src-pages-contact-js-332b1eb9c83e0f35fdaa.js.map
